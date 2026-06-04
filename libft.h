@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marfern2 <marfern2@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rubi <marfern2@student.42madrid.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/18 11:13:00 by tu_login          #+#    #+#             */
-/*   Updated: 2026/06/03 22:05:16 by marfern2         ###   ########.fr       */
+/*   Updated: 2026/06/04 03:44:41 by rubi             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,9 @@
 
 typedef struct s_list
 {
-    void            *content;
-    struct s_list   *next;
-}                   t_list;
-
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 // Character checks
 int		ft_isdigit(int c);
@@ -57,17 +56,21 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_calloc(size_t count, size_t size);
 
+//  File Descriptor functions
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+
 // Conversion
 int		ft_atoi(const char *str);
 
 // LIstas enlazadas
 t_list	*ft_lstnew(void *content);
-void ft_lstadd_front(t_list **lst, t_list *new);
-int ft_lstsize(t_list *lst);
-void ft_lstadd_back(t_list **lst, t_list *new);
+void	ft_lstadd_front(t_list **lst, t_list *new);
+int		ft_lstsize(t_list *lst);
+void	ft_lstadd_back(t_list **lst, t_list *new);
 void	ft_lstdelone(t_list *lst, void (*del)(void*));
-void ft_lstclear(t_list **lst, void (*del)(void*));
-
-
+void	ft_lstclear(t_list **lst, void (*del)(void*));
 
 #endif

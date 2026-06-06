@@ -16,6 +16,9 @@ SRC =	ft_atoi.c \
 		ft_lstadd_front.c \
 		ft_lstclear.c \
 		ft_lstdelone.c \
+		ft_lstiter.c \
+		ft_lstlast.c \
+		ft_lstmap.c \
 		ft_lstnew.c \
 		ft_lstsize.c \
 		ft_memchr.c \
@@ -30,10 +33,12 @@ SRC =	ft_atoi.c \
 		ft_split.c \
 		ft_strchr.c \
 		ft_strdup.c \
+		ft_striteri.c \
 		ft_strjoin.c \
 		ft_strlcat.c \
 		ft_strlcpy.c \
 		ft_strlen.c \
+		ft_strmapi.c \
 		ft_strncmp.c \
 		ft_strnstr.c \
 		ft_strrchr.c \
